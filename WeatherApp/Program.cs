@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 
 namespace WeatherApp
 {
@@ -9,7 +7,7 @@ namespace WeatherApp
         static void Main(string[] args)
         {
             string key = File.ReadAllText("appsetting.json");
-            string APIKey = JObject.Parse(key).GetValue("APIKey").ToString();
+            var APIKey = JObject.Parse(key).GetValue("APIKey").ToString();
 
             Console.WriteLine("Enter zip:");
             var zipCode = Console.ReadLine();

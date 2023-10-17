@@ -8,10 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="bin\Debug\net6.0\appsettings.json" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="System.IO" Version="4.3.0" />
+    <None Include="bin\Debug\net6.0\appsettings.json" />
   </ItemGroup>
 </Project>
